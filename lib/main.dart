@@ -18,8 +18,12 @@ class MyApp extends StatelessWidget {
               height: 150,
               child: Text(
                 'Moto Hape Didalem Hape anjay gurinjay tak kunjay',
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w800),
+                style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                ),
                 textAlign: TextAlign.center,
                 maxLines: 2, // max line
                 overflow: TextOverflow.clip, // text overflow
