@@ -10,7 +10,7 @@ class ProductPage extends StatelessWidget {
       body: Center(
           child: ElevatedButton(
         child: Text("Back"),
-        onPressed: () => {},
+        onPressed: () => {Navigator.pop(context)},
       )),
     );
   }

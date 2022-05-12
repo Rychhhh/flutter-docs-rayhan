@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routing/main_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -6,11 +7,23 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: ElevatedButton(
-        child: Text("Login"),
-        onPressed: () => {},
-      )),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            "Login Page",
+            style: TextStyle(fontSize: 40),
+          ),
+          Center(
+              child: ElevatedButton(
+            child: Text("Login"),
+            onPressed: () => {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const MainPage()))
+            },
+          )),
+        ],
+      ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routing/product_page.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -10,7 +11,10 @@ class MainPage extends StatelessWidget {
       body: Center(
           child: ElevatedButton(
         child: Text("Product Page"),
-        onPressed: () => {},
+        onPressed: () => {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ProductPage()))
+        },
       )),
     );
   }
