@@ -22,6 +22,20 @@ class _MyAppState extends State<MyApp> {
             // obscureText: true, = ** password
             // maxLength: 5,
             // maxLines: 10,
+            decoration: InputDecoration(
+                fillColor: Color.fromARGB(255, 229, 225, 225),
+                filled: true,
+                icon: const Icon(Icons.input_rounded),
+                prefixIcon: const Icon(Icons.person),
+                prefixText: "Name : ",
+                hintText: "Masukan Nama Anda...",
+                hintStyle: const TextStyle(color: Colors.black),
+                prefixStyle: const TextStyle(
+                    color: Color.fromARGB(255, 179, 146, 46),
+                    fontWeight: FontWeight.w500),
+                label: const Text("Username"),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15.0))),
             onChanged: (value) {
               setState(() {});
             },
